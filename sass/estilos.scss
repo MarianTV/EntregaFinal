@@ -32,7 +32,7 @@ header, main{
     h2{
         @include h2;
         &.recetas{
-        font-weight:700;
+            font-weight:700;
         }
     }
     h3{
@@ -92,7 +92,7 @@ header, main{
 #contenedor_servicios{
     @include contenedores;
     padding-bottom: 40px;
-    gap: 40px;
+    gap: 15px;
 }
 
 #contenedor_recetas{
@@ -131,7 +131,8 @@ header, main{
     padding: 8px;
 }
 
-#consulta{height:150px;
+#consulta{
+    height:150px;
 }
 
 
@@ -161,16 +162,16 @@ header, main{
     padding-bottom: 20px;
     h5 {
         @include h5;
-    }
+       }
     
     h6 {
         @include h6; 
-        span {
+        span{
             font-weight: 700;} 
-    }
+        }
     a {
         @include links;
-    }
+      }
 }
 
 
@@ -189,36 +190,32 @@ img {
     width: 100%;
 }
 
-h1{
-    font-size: 35px;
-    padding-bottom:20px; 
-    line-height: 1.1;
-}
-
-h2{
-    font-size: 28px; 
-}
-
-p{
-    &.semana{
-        padding-bottom:30px;
-    }
-    &.texto_coccion {
-        padding: 0px; 
-    }
-    &.servicios{
-        margin: 0px 5px 40px 15px;
+header, main{
+    p{
+        line-height: 1.2;
+        
+        &.semana{
+            padding-bottom:20px;
         }
+        &.texto_coccion {
+            padding: 0px; 
+        }
+        &.servicios{
+            margin: 15px 5px 40px 15px;
+            }
+    }
 }
 
-
-#texto_receta1, #texto_receta2, #texto_receta3, div#local {
+#texto_receta1, #texto_receta2, #texto_receta3 {
     padding: 25px 15px 0px 15px;
+}
 
+div#local {
+    padding: 0px 15px 15px 15px;
 }
 
 div#contenedor_recetas{
- padding: 0px 0px 80px   
+    padding: 0px 0px 80px   
 }
 
 #contenedor_footer{
@@ -232,28 +229,13 @@ div#contenedor_recetas{
 
 @media screen and (max-width:500px){
 
-    h1{
-        padding-bottom: 10px;    
-    }
-    
-    h2{
-        font-size: 25px;    
-    }
-    
-    h3{
-        padding: 3px 15px;
-        max-width: none;
-        text-align: left;
-        position:static;
-    }
-
+header, main{
     h5, h6{
         text-align: left;
     }
-
         
     #contenedor_footer{
         margin: 0px 15px;
     }
-
+}
 }

@@ -20,11 +20,19 @@ header ul, main ul {
 header h1, main h1 {
   font-family: "Arvo", serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 42px;
   text-align: center;
   padding-bottom: 50px;
   padding-top: 50px;
   letter-spacing: -1px; }
+  @media screen and (max-width: 678px) {
+    header h1, main h1 {
+      font-size: 34px;
+      padding-bottom: 20px; } }
+  @media screen and (max-width: 500px) {
+    header h1, main h1 {
+      font-size: 30px;
+      padding-bottom: 15px; } }
   header h1.semana, main h1.semana {
     padding-bottom: 5px; }
 
@@ -34,6 +42,12 @@ header h2, main h2 {
   font-size: 28px;
   letter-spacing: -0.5px;
   line-height: 1.1; }
+  @media screen and (max-width: 678px) {
+    header h2, main h2 {
+      font-size: 25px; } }
+  @media screen and (max-width: 500px) {
+    header h2, main h2 {
+      font-size: 23px; } }
   header h2.recetas, main h2.recetas {
     font-weight: 700; }
 
@@ -51,6 +65,12 @@ header h3, main h3 {
   position: relative;
   top: -18px;
   right: 0px; }
+  @media screen and (max-width: 500px) {
+    header h3, main h3 {
+      padding: 3px 15px;
+      max-width: none;
+      text-align: left;
+      position: static; } }
 
 header h4, main h4 {
   font-family: Arial, Helvetica, sans-serif;
@@ -97,7 +117,7 @@ header p, main p {
   display: flex;
   flex-direction: row;
   padding-bottom: 40px;
-  gap: 40px; }
+  gap: 15px; }
 
 #contenedor_recetas {
   display: flex;
@@ -178,20 +198,18 @@ header p, main p {
     padding: 20px 15px; }
   img {
     width: 100%; }
-  h1 {
-    font-size: 35px;
-    padding-bottom: 20px;
-    line-height: 1.1; }
-  h2 {
-    font-size: 28px; }
-  p.semana {
-    padding-bottom: 30px; }
-  p.texto_coccion {
-    padding: 0px; }
-  p.servicios {
-    margin: 0px 5px 40px 15px; }
-  #texto_receta1, #texto_receta2, #texto_receta3, div#local {
+  header p, main p {
+    line-height: 1.2; }
+    header p.semana, main p.semana {
+      padding-bottom: 20px; }
+    header p.texto_coccion, main p.texto_coccion {
+      padding: 0px; }
+    header p.servicios, main p.servicios {
+      margin: 15px 5px 40px 15px; }
+  #texto_receta1, #texto_receta2, #texto_receta3 {
     padding: 25px 15px 0px 15px; }
+  div#local {
+    padding: 0px 15px 15px 15px; }
   div#contenedor_recetas {
     padding: 0px 0px 80px; }
   #contenedor_footer {
@@ -201,16 +219,7 @@ header p, main p {
     justify-content: center; } }
 
 @media screen and (max-width: 500px) {
-  h1 {
-    padding-bottom: 10px; }
-  h2 {
-    font-size: 25px; }
-  h3 {
-    padding: 3px 15px;
-    max-width: none;
-    text-align: left;
-    position: static; }
-  h5, h6 {
+  header h5, header h6, main h5, main h6 {
     text-align: left; }
-  #contenedor_footer {
+  header #contenedor_footer, main #contenedor_footer {
     margin: 0px 15px; } }
