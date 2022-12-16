@@ -198,14 +198,12 @@ header p, main p {
     padding: 20px 15px; }
   img {
     width: 100%; }
-  header p, main p {
-    line-height: 1.2; }
-    header p.semana, main p.semana {
-      padding-bottom: 20px; }
-    header p.texto_coccion, main p.texto_coccion {
-      padding: 0px; }
-    header p.servicios, main p.servicios {
-      margin: 15px 5px 40px 15px; }
+  header p.semana, main p.semana {
+    padding-bottom: 20px; }
+  header p.texto_coccion, main p.texto_coccion {
+    padding: 0px; }
+  header p.servicios, main p.servicios {
+    margin: 15px 5px 40px 15px; }
   #texto_receta1, #texto_receta2, #texto_receta3 {
     padding: 25px 15px 0px 15px; }
   div#local {
